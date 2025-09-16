@@ -1,0 +1,34 @@
+{
+  "info": {
+    "_postman_id": "b1e1e1e1-1111-2222-3333-444455556666",
+    "name": "Agent Onboarding API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Collection for testing Agent Onboarding API endpoints."
+  },
+  "item": [
+    {
+      "name": "Create Application",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"HOB12345\",\n  \"designation\": \"Manager\",\n  \"title\": \"Mr\",\n  \"initials\": \"A.B.C.\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"nameByInitials\": \"A.B.C. Doe\",\n  \"civilStatus\": \"Single\",\n  \"hasChildren\": false,\n  \"nationality\": \"Sri Lankan\",\n  \"dateOfBirth\": \"1990-01-01\",\n  \"passportNo\": \"N12345678\",\n  \"rejoin\": \"No\",\n  \"preferredLanguage\": \"English\",\n  \"nicNo\": \"900101234V\",\n  \"takafulAgent\": false\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3002/api/v1/agent-onboarding/applications",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "agent-onboarding", "applications"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
