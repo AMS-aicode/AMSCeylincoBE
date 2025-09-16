@@ -1,6 +1,10 @@
 # Node modules
 node_modules/
 
+# Ignore everything inside uploads/
+uploads/*
+!uploads/.gitkeep
+
 # Logs
 logs/
 *.log
